@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entraînement Powerlifter - Squat</title>
+    <link rel="stylesheet" href="squat.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="Shapeflix.html">Shapeflix</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="entrainement.html">Entraînement</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Entraînement Powerlifter - Squat</h1>
+        <p>Maximisez votre force avec ce programme spécifique au squat.</p>
+    </section>
+
+    <main>
+        <section class="training">
+            <h2>Programme de Squat</h2>
+            <div class="training-session">
+                <h3>Partie 1: Squat Principal</h3>
+                <p>Objectif: Développer la force maximale</p>
+                <ul>
+                    <li>Échauffement: 5-10 minutes de mobilité et d'activation</li>
+                    <li>Squat: 5 séries de 5 répétitions à 80% de votre 1RM</li>
+                    <li>Repos de 3 à 5 minutes entre les séries</li>
+                </ul>
+            </div>
+
+            <div class="training-session">
+                <h3>Partie 2: Accessoires</h3>
+                <p>Objectif: Renforcer les muscles stabilisateurs</p>
+                <ul>
+                    <li>Squat avant: 4 séries de 6 répétitions</li>
+                    <li>Fentes avec haltères: 4 séries de 8 répétitions par jambe</li>
+                    <li>Leg Curl: 4 séries de 12 répétitions</li>
+                    <li>Extensions de mollets: 4 séries de 15 répétitions</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Powerlifter Training. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #222;
+}
+
+header {
+    background: #150f0f;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff4500;
+}
+
+.burger {
+    display: none;
+}
+
+.hero {
+    background-image: url('https://ih1.redbubble.net/image.749635979.1603/poster,504x498,f8f8f8-pad,600x600,f8f8f8.u6.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.training {
+    padding: 40px 20px;
+    background: #333;
+}
+
+.training h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.training-session {
+    background: #444;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.training-session h3 {
+    margin-top: 0;
+}
+
+.training-session ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    position:relative;
+    margin-bottom: 0px;
+
+}
+
+/* Responsive - Affichage pour les petits écrans */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 10px;
+    }
+}
+</style>
+<script>
+    document.querySelector('.burger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+})
+</script>

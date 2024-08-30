@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entraînement Bodybuilding - Push Day</title>
+    <link rel="stylesheet" href="push.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="Shapeflix.html">Shapeflix</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="entrainement.html">Entraînement</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Entraînement Bodybuilding - Push Day</h1>
+        <p>Optimisez votre force et hypertrophie avec ce programme Push spécifique.</p>
+    </section>
+
+    <main>
+        <section class="training">
+            <h2>Programme Push Day</h2>
+            <div class="training-session">
+                <h3>Partie 1: Développé Couché</h3>
+                <p>Objectif: Développer la force et la masse musculaire</p>
+                <ul>
+                    <li>Échauffement: 5-10 minutes de cardio léger</li>
+                    <li>Développé Couché: 4 séries de 6-8 répétitions</li>
+                    <li>Pause modérée entre les séries (2 à 3 minutes)</li>
+                </ul>
+            </div>
+
+            <div class="training-session">
+                <h3>Partie 2: Développé Incliné</h3>
+                <p>Objectif: Cibler la partie supérieure des pectoraux</p>
+                <ul>
+                    <li>Développé Incliné avec haltères: 4 séries de 8-10 répétitions</li>
+                    <li>Écartés inclinés avec haltères: 3 séries de 10-12 répétitions</li>
+                    <li>Presses à la machine: 3 séries de 10-12 répétitions</li>
+                </ul>
+            </div>
+
+            <div class="training-session">
+                <h3>Partie 3: Épaules et Triceps</h3>
+                <p>Objectif: Renforcer les épaules et triceps</p>
+                <ul>
+                    <li>Développé militaire: 4 séries de 8-10 répétitions</li>
+                    <li>Élévations latérales: 3 séries de 12-15 répétitions</li>
+                    <li>Triceps extensions à la corde: 4 séries de 12-15 répétitions</li>
+                    <li>Pompes plongeantes: 3 séries au poids du corps</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bodybuilding Training. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #222;
+}
+
+header {
+    background: #150f0f;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff4500;
+}
+
+.burger {
+    display: none;
+}
+
+.hero {
+    background-image: url('https://ih1.redbubble.net/image.5232790631.3742/cposter,medium,square_product,1000x1000.2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.training {
+    padding: 40px 20px;
+    background: #333;
+}
+
+.training h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.training-session {
+    background: #444;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.training-session h3 {
+    margin-top: 0;
+}
+
+.training-session ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    position:relative;
+    margin-bottom: 0px;
+
+}
+
+/* Responsive - Affichage pour les petits écrans */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 10px;
+    }
+}
+</style>
+
+<script>
+    document.querySelector('.burger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+</script>

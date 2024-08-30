@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entraînement Powerlifter - Bench</title>
+    <link rel="stylesheet" href="bench.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <ul class="nav-links">
+                    <li><a href="Shapeflix.html">Shapeflix</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="entrainement.html">Entraînement</a></li>
+                    <li><a href="nutrition.html">Nutrition</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Entraînement Powerlifter - Bench Press</h1>
+        <p>Optimisez votre performance au bench avec ce programme spécifique.</p>
+    </section>
+
+    <main>
+        <section class="training">
+            <h2>Programme de Bench Press</h2>
+            <div class="training-session">
+                <h3>Partie 1: Bench Press Principal</h3>
+                <p>Objectif: Développer la force maximale</p>
+                <ul>
+                    <li>Échauffement: 5-10 minutes de cardio léger</li>
+                    <li>Bench Press: 5 séries de 5 répétitions à 80% de votre 1RM</li>
+                    <li>Pause longue entre les séries (3 à 5 minutes)</li>
+                </ul>
+            </div>
+
+            <div class="training-session">
+                <h3>Partie 2: Accessoires</h3>
+                <p>Objectif: Renforcer les muscles stabilisateurs</p>
+                <ul>
+                    <li>Presses inclinées: 4 séries de 8 répétitions</li>
+                    <li>Écartés avec haltères: 4 séries de 10 répétitions</li>
+                    <li>Triceps extensions: 4 séries de 12 répétitions</li>
+                    <li>Pull-over avec haltère: 3 séries de 15 répétitions</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Powerlifter Training. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    background-color: #222;
+}
+
+header {
+    background: #150f0f;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff4500;
+}
+
+.burger {
+    display: none;
+}
+
+.hero {
+    background-image: url('https://st2.depositphotos.com/5329014/7812/v/950/depositphotos_78129010-stock-illustration-powerlifting-bench-press.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.training {
+    padding: 40px 20px;
+    background: #333;
+}
+
+.training h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.training-session {
+    background: #444;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+.training-session h3 {
+    margin-top: 0;
+}
+
+.training-session ul {
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 20px;
+    position:relative;
+    margin-bottom: 0px;
+}
+
+/* Responsive - Affichage pour les petits écrans */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        height: 100vh;
+        width: 100%;
+        background: #333;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+        cursor: pointer;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 25px;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+    }
+
+    .burger div {
+        width: 25px;
+        height: 3px;
+        background: #ffffff;
+        border-radius: 10px;
+    }
+}
+</style>
+<script>
+    document.querySelector('.burger').addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.toggle('active');
+});
+</script>
